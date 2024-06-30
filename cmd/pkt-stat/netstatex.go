@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/Gazmasater/myconst"
 	"github.com/mdlayher/netlink"
-	"github.com/netstat-go/myconst"
 	"golang.org/x/sys/unix"
 )
 
