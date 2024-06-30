@@ -31,9 +31,11 @@ func main() {
 	}
 
 	// Создаем атрибуты запроса
+	//myconst.INET_DIAG_REQ_BYTECODE   взял с пакета С
 	attrs, err := netlink.MarshalAttributes([]netlink.Attribute{
 		{Type: myconst.INET_DIAG_REQ_BYTECODE, Data: []byte{}},
 	})
+
 	if err != nil {
 		log.Fatalf("Ошибка при формировании атрибутов запроса: %v", err)
 	}
